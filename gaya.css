@@ -1,0 +1,135 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  }
+  
+  body{
+    padding: 0;
+    margin: 0;
+    background-image: url(https://media.travelingyuk.com/wp-content/uploads/2017/07/Teluk-Cinta.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 80vh;
+  }
+  
+  header{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  h1{
+    font-size: clamp(2.25rem,4vw,3rem);
+    font-weight: 900;
+  }
+  
+  section{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  aside{
+    flex: 2;
+  }
+  
+  ul,li{
+    list-style-type: none;
+  }
+  
+  li{
+    margin-bottom: 30px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: clamp(1rem,2vw,1.5rem);
+    font-weight: 700;
+    position: relative;
+  }
+  
+  a:after{
+    width: 0;
+    height: 2px;
+    background-color: rgb(22, 26, 233);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    content: '';
+    transition: width 0.2s ease-in-out;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
+  
+  article{
+    background-color: rgba(0, 0, 0, 0.6);
+    flex: 6;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 40px 60px 40px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  main{
+    flex: 1;
+  }
+  
+  h2{
+    font-weight: 700;
+  }
+  
+  p{
+    font-size: 20px;
+  }
+  
+  figure{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  img{
+    min-width: 170px;
+    aspect-ratio: 6/5;
+    max-width: 100%;
+    flex: 1;
+    padding: 8px 16px 8px 16px;
+    border-radius: 25px;
+    display: block;
+  }
+  
+  footer{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-weight: 500;
+  }
+  
+  @media screen and (max-width: 900px) {
+    header{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    section{
+      flex-direction: column;
+    }
+    li{
+      display: inline;
+      margin-right: 30px;
+    }
+    article{
+      border-radius: 0;
+    }
+  }
+  
+  @media screen and (max-width: 630px) {
+    article{
+      flex-direction: column;
+    }
+  }
